@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "min_element.h"
-#include "max_element.h"
+#include "min_max_element.h"
 
 int main(void) {
     int Array[5] = {5,3,4,1,2};
