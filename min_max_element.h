@@ -1,5 +1,6 @@
 #ifndef MIN_MAX_ELEMENT_H_
 #define MIN_MAX_ELEMENT_H_
+
 int max_element(const int* sourceArr, const int numElements) // You have to manually set numElemens or do sizeof before passing to the func
 {
     int returnMaxVal = *sourceArr;
@@ -19,4 +20,5 @@ int min_element(const int* sourceArr, const int numElements)
     }
     return returnMinVal;
 };
+
 #endif
