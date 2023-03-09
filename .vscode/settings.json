@@ -3,6 +3,11 @@
         "stdio.h": "c",
         "min_element.h": "c",
         "stdlib.h": "c",
-        "_cygwin.h": "c"
+        "_cygwin.h": "c",
+        "corecrt_stdio_config.h": "c",
+        "corecrt.h": "c",
+        "_mingw.h": "c",
+        "_mingw_mac.h": "c",
+        "_mingw_secapi.h": "c"
     }
 }
