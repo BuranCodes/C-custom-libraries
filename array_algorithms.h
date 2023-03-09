@@ -30,6 +30,7 @@ int find_one_element(const int* __source_arr, const int __num_elements, const in
                 if (__find_value == __source_arr[Index]) {
                         __return_value = Index;
                         break;
+                }
         }
         if (!__return_value)
                 return POS_NOT_FOUND;
