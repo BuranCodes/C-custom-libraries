@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "min_element.h": "c"
+        "min_element.h": "c",
+        "stdlib.h": "c",
+        "_cygwin.h": "c"
     }
 }
