@@ -9,47 +9,47 @@
 #define POS_NOT_FOUND -1
 #define VAL_NOT_FOUND -1
 
-int max_element(const int *__source_arr, const int __num_elements) //! You have to manually set numElemens or do sizeof before passing to the function
+int max_element(const int *source_arr, const int num_elements) //! You have to manually set numElemens or do sizeof before passing to the function
 {
-        int __return_value = *__source_arr;
-        for (int Index = ARR_BEGIN_PAST_ZERO; Index < __num_elements; Index++)
-                if (__return_value < __source_arr[Index]) __return_value = __source_arr[Index];
-        return __return_value;
+        int return_value = *source_arr;
+        for (int i = ARR_BEGIN_PAST_ZERO; i < num_elements; i++)
+                if (return_value < source_arr[i]) return_value = source_arr[i];
+        return return_value;
 }
 
-int min_element(const int *__source_arr, const int __num_elements)
+int min_element(const int *source_arr, const int num_elements)
 {
-        int __return_value = *__source_arr;
-        for (int Index = ARR_BEGIN_PAST_ZERO; Index < __num_elements; Index++)
-                if (__return_value > __source_arr[Index]) __return_value = __source_arr[Index];
-        return __return_value;
+        int return_value = *source_arr;
+        for (int i = ARR_BEGIN_PAST_ZERO; i < num_elements; i++)
+                if (return_value > source_arr[i]) return_value = source_arr[i];
+        return return_value;
 }
 
 int find_element(const int* __source_arr, const int __num_elements, const int __find_value) 
 {
-        int __return_value;
-        for (int Index = ARR_BEGIN; Index < __num_elements; Index++) {
-                if (__find_value == __source_arr[Index]) {
-                        __return_value = Index;
+        int return_value;
+        for (int i = ARR_BEGIN; i < num_elements; i++) {
+                if (find_value == source_arr[i]) {
+                        return_value = i;
                         break;
                 }
         }
-        if (!__return_value)
+        if (!return_value)
                 return POS_NOT_FOUND;
-        else return __return_value;
+        else return return_value;
 }
 
-int count_element(const int* __source_arr, const int __num_elements, const int __find_value) 
+int count_elements(const int* __source_arr, const int __num_elements, const int __find_value) 
 {
-        int __return_value;
-        for (int Index = ARR_BEGIN; Index < __num_elements; Index++) {
-                if (__find_value == __source_arr[Index]) {
-                        __return_value++;
+        int return_value;
+        for (int i = ARR_BEGIN; i < num_elements; i++) {
+                if (find_value == source_arr[i]) {
+                        return_value++;
                 }
         }
-        if (!__return_value)
+        if (!return_value)
                 return VAL_NOT_FOUND;
-        else return __return_value;
+        else return return_value;
 }
 
 #endif
