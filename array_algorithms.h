@@ -25,7 +25,7 @@ int min_element(const int *arr, const int num_elements)
         return minVal;
 }
 
-int find_element(const int* arr, const int num_elements, const int find_value) 
+int target(const int* arr, const int num_elements, const int find_value) 
 {
         int posVal;
         for (int i = 0; i < num_elements; i++) {
