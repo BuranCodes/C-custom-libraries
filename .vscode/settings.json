@@ -8,6 +8,8 @@
         "corecrt.h": "c",
         "_mingw.h": "c",
         "_mingw_mac.h": "c",
-        "_mingw_secapi.h": "c"
+        "_mingw_secapi.h": "c",
+        "array_algorithms.h": "c",
+        "alg.h": "c"
     }
 }
