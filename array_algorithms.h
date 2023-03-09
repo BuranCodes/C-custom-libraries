@@ -38,4 +38,6 @@ int find_one_element(const int* __source_arr, const int __num_elements, const in
         else return __return_value;
 }
 
+// TODO: counting function
+
 #endif
