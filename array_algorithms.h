@@ -9,27 +9,27 @@ enum {
         VAL_NOT_FOUND = -1
 };
 
-int max_element(const int *arr, const int num_elements) //! You have to manually set numElemens or do sizeof before passing to the function
+int max_element(const int *arr, const int arr_len) //! You have to manually set arr_len or do sizeof before passing to the function
 {
         int maxVal = *arr;
-        for (int i = 1; i < num_elements; i++)
+        for (int i = 1; i < arr_len; i++)
                 if (maxVal < arr[i]) maxVal = arr[i];
         return maxVal;
 }
 
-int min_element(const int *arr, const int num_elements)
+int min_element(const int *arr, const int arr_len)
 {
         int minVal = *arr;
-        for (int i = 1; i < num_elements; i++)
+        for (int i = 1; i < arr_len; i++)
                 if (minVal > arr[i]) minVal = arr[i];
         return minVal;
 }
 
-int target(const int* arr, const int num_elements, const int find_value) 
+int target(const int* arr, const int arr_len, const int target) 
 {
         int posVal;
-        for (int i = 0; i < num_elements; i++) {
-                if (find_value == arr[i]) {
+        for (int i = 0; i < arr_len; i++) {
+                if (target == arr[i]) {
                         posVal = i;
                         break;
                 }
@@ -40,11 +40,11 @@ int target(const int* arr, const int num_elements, const int find_value)
                 return posVal;
 }
 
-int count_elements(const int* arr, const int num_elements, const int find_value) 
+int count_elements(const int* arr, const int arr_len, const int target) 
 {
         int count;
-        for (int i = 0; i < num_elements; i++) {
-                if (find_value == arr[i]) {
+        for (int i = 0; i < arr_len; i++) {
+                if (target == arr[i]) {
                         count++;
                 }
         }
