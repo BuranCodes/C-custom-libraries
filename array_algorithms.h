@@ -7,8 +7,9 @@
 #define ARR_BEGIN_PAST_ZERO 1
 
 #define POS_NOT_FOUND -1
+#define VAL_NOT_FOUND -1
 
-int max_element(const int *__source_arr, const int __num_elements) // You have to manually set numElemens or do sizeof before passing to the function
+int max_element(const int *__source_arr, const int __num_elements) //! You have to manually set numElemens or do sizeof before passing to the function
 {
         int __return_value = *__source_arr;
         for (int Index = ARR_BEGIN_PAST_ZERO; Index < __num_elements; Index++)
@@ -38,6 +39,17 @@ int find_one_element(const int* __source_arr, const int __num_elements, const in
         else return __return_value;
 }
 
-// TODO: counting function
+int count_elements(const int* __source_arr, const int __num_elements, const int __find_value) 
+{
+        int __return_value;
+        for (int Index = ARR_BEGIN; Index < __num_elements; Index++) {
+                if (__find_value == __source_arr[Index]) {
+                        __return_value++;
+                }
+        }
+        if (!__return_value)
+                return VAL_NOT_FOUND;
+        else return __return_value;
+}
 
 #endif
