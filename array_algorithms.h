@@ -36,7 +36,8 @@ int find_element(const int* arr, const int num_elements, const int find_value)
         }
         if (!posVal)
                 return POS_NOT_FOUND;
-        else return posVal;
+        else
+                return posVal;
 }
 
 int count_elements(const int* arr, const int num_elements, const int find_value) 
@@ -49,7 +50,8 @@ int count_elements(const int* arr, const int num_elements, const int find_value)
         }
         if (!count)
                 return VAL_NOT_FOUND;
-        else return count;
+        else 
+                return count;
 }
 
 #endif
