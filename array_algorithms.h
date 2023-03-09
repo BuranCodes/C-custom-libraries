@@ -25,7 +25,7 @@ int min_element(const int *__source_arr, const int __num_elements)
         return __return_value;
 }
 
-int find_one_element(const int* __source_arr, const int __num_elements, const int __find_value) 
+int find_element(const int* __source_arr, const int __num_elements, const int __find_value) 
 {
         int __return_value;
         for (int Index = ARR_BEGIN; Index < __num_elements; Index++) {
@@ -39,7 +39,7 @@ int find_one_element(const int* __source_arr, const int __num_elements, const in
         else return __return_value;
 }
 
-int count_elements(const int* __source_arr, const int __num_elements, const int __find_value) 
+int count_element(const int* __source_arr, const int __num_elements, const int __find_value) 
 {
         int __return_value;
         for (int Index = ARR_BEGIN; Index < __num_elements; Index++) {
