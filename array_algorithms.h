@@ -5,6 +5,7 @@
 
 #define ARR_BEGIN 0
 #define ARR_BEGIN_PAST_ZERO 1
+
 #define POS_NOT_FOUND -1
 
 int max_element(const int *__source_arr, const int __num_elements) // You have to manually set numElemens or do sizeof before passing to the function
