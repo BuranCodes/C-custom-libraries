@@ -1,7 +1,7 @@
 // Buran
-// Headers for algorithm functions intended for one dimensional arrays. Sorting, min-max, search, counting
-#ifndef MIN_MAX_ELEMENT_H_
-#define MIN_MAX_ELEMENT_H_
+// Headers for algorithm functions intended for one dimensional arrays. Min-max, find, count, sort
+#ifndef ARRAY_ALGORITHMS_H_
+#define ARRAY_ALGORITHMS_H_
 
 
 enum {
@@ -13,7 +13,8 @@ int max_element(const int *arr, const int arr_len) //! You have to manually set 
 {
         int maxVal = *arr;
         for (int i = 1; i < arr_len; i++)
-                if (maxVal < arr[i]) maxVal = arr[i];
+                if (maxVal < arr[i])
+                        maxVal = arr[i];
         return maxVal;
 }
 
@@ -21,7 +22,8 @@ int min_element(const int *arr, const int arr_len)
 {
         int minVal = *arr;
         for (int i = 1; i < arr_len; i++)
-                if (minVal > arr[i]) minVal = arr[i];
+                if (minVal > arr[i]) 
+                        minVal = arr[i];
         return minVal;
 }
 
@@ -54,4 +56,32 @@ int count_elements(const int* arr, const int arr_len, const int target)
                 return count;
 }
 
-#endif
+void sort_small(int* arr, const int arr_len)
+{
+        int tmp;
+        for (int i = 0; i < arr_len-1; i++ ) {
+                for (int j = 0; j < arr_len-1; j++) {
+                        if (arr[j] > arr[j+1]) {
+                                tmp = arr[j];
+                                arr[j] = arr[j+1];
+                                arr[j+1] = tmp; 
+                        }
+                } 
+        }
+}
+
+void sort_large(int* arr, const int arr_len)
+{
+        int tmp;
+        for (int i = 0; i < arr_len-1; i++ ) {
+                for (int j = 0; j < arr_len-1; j++) {
+                        if (arr[j] < arr[j+1]) {
+                                tmp = arr[j];
+                                arr[j] = arr[j+1];
+                                arr[j+1] = tmp; 
+                        }
+                } 
+        }
+}
+
+#endif /*ARRAY_ALGORITHMS_H_*/
