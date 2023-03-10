@@ -10,6 +10,7 @@
         "_mingw_mac.h": "c",
         "_mingw_secapi.h": "c",
         "array_algorithms.h": "c",
-        "alg.h": "c"
+        "alg.h": "c",
+        "_mingw_off_t.h": "c"
     }
 }
