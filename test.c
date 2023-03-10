@@ -20,7 +20,9 @@ int main(void)
         for (int i = 0; i < 5; i++) {
                 printf("Index and value: %d    |    %d\n", i, Array[i]);
         }
+        
         sort_large(Array, 5);
+
         for (int i = 0; i < 5; i++) {
                 printf("Index and value: %d    |    %d\n", i, Array[i]);
         }
